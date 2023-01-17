@@ -1,4 +1,5 @@
 import LoginPage from "pages/LoginPage";
+import MainPage from "pages/MainPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 
@@ -7,6 +8,7 @@ function App() {
         <Router>
             <GlobalStyle />
             <Routes>
+                <Route path="/" element={<MainPage />}></Route>
                 <Route path="/login" element={<LoginPage />}></Route>
             </Routes>
         </Router>
